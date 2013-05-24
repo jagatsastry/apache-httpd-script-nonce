@@ -1,4 +1,0 @@
-        <script nonce="noncynonce">
-        alert('PASS (1. Valid script nonce)');
-        </script>
-
