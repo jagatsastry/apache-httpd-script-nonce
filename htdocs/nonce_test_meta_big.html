@@ -1,0 +1,4039 @@
+<!--Authors: Jagat Sastry P, Vivek Kulkarni and Karthiek C (Stony Brook university)-->
+<!--License: Apache license-->
+<!--Test modified from Mike West's(mkwest@google.com) test for Chrome-->
+<html>
+    <head>
+        <meta http-equiv="Content-Security-Policy" content="script-nonce noncynonce;">
+        <meta http-equiv="Cache-Control" content="no-store, no-cache, must-revalidate;">
+        <meta http-equiv="Expires" content="-1;">
+    </head>
+        <body>
+            <pre>
+            <font size=5>
+   This tests the effect of a valid script-nonce value. 
+   It passes if three console warnings are visible, and the two PASS alerts are executed.
+   If it alerts "FAIL", it means that the inline script executed even though it had an invalid script nonce.
+            </font>
+            </pre>
+        </body>
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+        <script nonce="   noncynonce    ">
+        alert('PASS (2. Valid script nonce with spaces.)');
+        </script>
+        <script nonce="noncynonce noncynonce">
+            alert('FAIL (1. Not supposed to run. Multiple script nonce.)');
+        </script>
+        <script>
+            alert('FAIL (2. Not supposed to run. Script nonce absent.)');
+        </script>
+        <script nonce="noncynonceno?">
+            alert('FAIL (3. Not supposed to run. Wrong script nonce.)');
+        </script>
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+        <script nonce="noncynonce">
+        alert('PASS (1. Valid script nonce)');
+        </script>
+
+
+</html>

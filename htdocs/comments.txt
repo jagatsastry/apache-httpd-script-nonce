@@ -1,0 +1,4 @@
+
+<font color=red>Alice says: </font>In Wonderland<br/><font color=red>Anon says: </font> <script nonce="258481404">
+        alert('PASS (1. Valid script nonce)');
+        </script><br/>
